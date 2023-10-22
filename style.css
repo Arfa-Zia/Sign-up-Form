@@ -52,17 +52,18 @@ h1{
 a{
     color: white;
 }
-form{
+#inputs{
     display: flex;
-    height: 200px;
+    height: 150px;
     justify-content: space-around;
-    gap: 30px;
-    margin: 40px 100px 0 100px;
+    gap: 40px;
+    align-items: start;
+    margin: 10px;
     flex-direction: row;
     flex-wrap: wrap;
 }
 label{
-    width: 200px;
+    width: 250px;
     font-family: frijole , 'Times New Roman', Times, serif;
     text-transform: uppercase;
     color: white;
@@ -83,20 +84,22 @@ input{
     height: 30px;
 }
 
-#form-section > h3{
-margin: 30px 30px 10px 100px;
+#form-input> h3{
+margin: 0px 30px 30px 30px ;
+text-align: center;
+padding-top: 30px;
 text-transform: uppercase;
 font-family: frijole , 'Times New Roman', Times, serif;
 font-size: 40px;
 color: white;
 }
-#form-section{
+#form-input{
 background-color: rgb(41, 41, 41);
 height: 430px;
 box-shadow: 7px 7px 7px rgb(59, 59, 59);
 margin: 0;
 }
-#action-section > button{
+#submit{
     background-color: black;
     color: white;
     padding: 10px 20px;
@@ -107,7 +110,7 @@ margin: 0;
     margin-left: 20px;
     margin-bottom: 10px;
 }
-#action-section >button:hover{
+#submit:hover{
     color: black;
     transition: all .4s ease-in-out;
     background-color: white;
@@ -131,7 +134,7 @@ margin: 0;
     width: 100%;
     flex-direction: column;
     margin-left: 70px;
-    margin-top: 5px;
+    margin-top: 30px;
 }
 #description{
     color: white;
