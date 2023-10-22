@@ -13,23 +13,20 @@
     <main>
         <div class="container">
 
-            <audio id="myAudio" autoplay loop>
+              <audio id="myAudio" autoplay loop>
                 <source src="audio/Horror-Long-Version(chosic.com).mp3" type="audio/mpeg">
               </audio>
-              
               <p id="audio-control">
                 <button id="audio-button"> <i class="fa fa-play"></i></button>
               </p>
               
-
             <div id="hero">
-                
-            
 
-                <div id="head">
+                 <div id="head">
                     <img src="img/noun-halloween-symbols-6013408.svg" alt="logo" id="logo">
                     <h1>Spookils</h1>
                 </div>
+
                 <div id="credit">
                     <p>
                         Photo by <a href="https://unsplash.com/@8moments?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Simon Berger</a> on <a href="https://unsplash.com/photos/grayscale-photo-of-trees-and-pathway-rydQVdwcgUQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
@@ -42,53 +39,56 @@
                          </p>
                 </div>
   
-        </div>
-        <div id="form-side">
-           <div id="description">
-            <p>Join us to be a part of Family.</p>
-           </div>
-            <div id="form-section">
-                <h3>Let 's Do this!</h3>
-                <form method="post">
-
-                    <label for="first-name">First Name
-                        <input type="text" name="first-name" id="first-name">
-
-                    </label>
-
-                    <label for="last-name">Last Name
-                        <input type="text" name="last-name" id="last-name">
-
-                    </label>
-
-                   <label for="email">Email
-                       <input type="email" name="email" id="email">
-
-                   </label>
-
-                   <label for="phone-no">Phone Number
-                       <input type="tel" name="phone-no" id="phone-no">
-
-                   </label>
-
-                   <label for="password">Password
-                       <input type="password" name="password" id="password">
-
-                   </label>
-
-                   <label for="confirm-password">Confirm password
-                       <input type="password" name="confirm-password" id="confirm-password">
-
-                   </label>
-                </form>
             </div>
-            <div id="action-section">
-                <button onclick="location.reload()">Create Account</button>
-                <p>Already have an account?<span> Log in</span></p>
-            </div> 
+
+             <div id="form-side">
+                    <div id="description">
+                        <p>Join us to be a part of Family.</p>
+                    </div>
+                 <div id="form-section">
+                     <form action="#">
+
+                     <div id="form-input"> 
+
+                        <h3>Let 's Do this!</h3>
+
+                        <div id="inputs">
+                            <label for="first-name">First Name
+                            <input type="text" name="first-name" id="first-name" required>
+                            </label>
+
+                            <label for="last-name">Last Name
+                            <input type="text" name="last-name" id="last-name" required>
+                            </label>
+                            
+                            <label for="email">Email
+                            <input type="email" name="email" id="email" required>
+                            </label>
+                            
+                            <label for="phone-no">Phone Number
+                            <input type="tel" name="phone-no" id="phone-no" maxlength="11" minlength="9"required >
+                            </label>
+                            
+                            <label for="password">Password
+                            <input type="password" name="password" id="password" required minlength="8">
+                            </label>
+                            
+                            <label for="confirm-password">Confirm password
+                            <input type="password" name="confirm-password" id="confirm-password" required minlength="9">
+                            </label>
+                        </div>
+                        
+                    </div>
+
+                        <div id="action-section"> 
+                            <button type="submit" id="submit">Create Account</button>
+                            <p>Already have an account?<span> Log in</span></p>
+                        </div>
+
+                     </form>
+                </div>
+            </div>
         </div>
-       
-    </div>
-</main>
+    </main>
 </body>
 </html>
